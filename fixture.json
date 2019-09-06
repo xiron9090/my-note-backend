@@ -1,0 +1,73 @@
+[
+  {
+    "model": "users.profile",
+    "pk": 1,
+    "fields": {
+      "avatar": "avatar/admin.jpg",
+      "user": 1
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 2,
+    "fields": {
+      "avatar": "avatar/xiron9090.jpeg",
+      "user": 2
+    }
+  },
+
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+      "password": "pbkdf2_sha256$150000$8xHDHHTBFMDO$zPJhog8Y6iEAlH6ziPrvOjLXGa9QK8ZDnOYXWlHMypQ=",
+      "last_login": "2019-09-01T00:44:54.862Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@admin.cu",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2019-08-29T13:28:22.687Z",
+      "groups": [],
+      "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+      "password": "pbkdf2_sha256$150000$VhH1cQwTKcHB$0B9I5+rk5TmxLJq5jb6TkUaAwWbGY7TmkSqFgkZ8ygU=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "xiron9090",
+      "first_name": "",
+      "last_name": "",
+      "email": "xiron9090@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2019-08-31T20:01:41.168Z",
+      "groups": [],
+      "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+      "password": "pbkdf2_sha256$150000$VhH1cQwTKcHB$0B9I5+rk5TmxLJq5jb6TkUaAwWbGY7TmkSqFgkZ8ygU=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "xiron",
+      "first_name": "",
+      "last_name": "",
+      "email": "xiron@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2019-08-31T20:01:41.168Z",
+      "groups": [],
+      "user_permissions": []
+  }
+}
+]

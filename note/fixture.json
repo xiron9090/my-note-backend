@@ -1,0 +1,138 @@
+[
+    {
+        "model":"note.category",
+        "pk":1,
+        "fields":{
+            "name":"Trabajo",
+            "user":1
+        }
+    },
+    {
+        "model":"note.category",
+        "pk":2,
+        "fields":{
+            "name":"Personal",
+            "user": 1
+        }
+    },
+    {
+        "model":"note.category",
+        "pk":3,
+        "fields":{
+            "name":"Trabajo",
+            "user": 2
+        }
+    },
+    {
+        "model":"note.category",
+        "pk":4,
+        "fields":{
+            "name":"Personal",
+            "user": 2
+        }
+    },
+    {
+        "model":"note.note",
+        "pk":1,
+        "fields":{
+            "category":1,
+            "user": 1,
+            "title":"React",
+            "note":"Desarrollar app con react y apollo",
+            "created_at":"2019-08-29T13:28:22.687749+00:00",
+            "update_at":"2019-09-01"
+
+        }
+    },
+    {
+        "model":"note.note",
+        "pk":2,
+        "fields":{
+            "category":2,
+            "user": 1,
+            "title":"Conseguir novia",
+            "note":"Conseguir una novia que me entienda porque paso mucho tiempo frente a la laptop",
+            "created_at":"2019-08-29T13:28:22.687749+00:00",
+            "update_at":"2019-09-01"
+
+        }
+    },
+    {
+        "model":"note.note",
+        "pk":3,
+        "fields":{
+            "category":1,
+            "user": 1,
+            "title":"Electron",
+            "note":"Desarrollar app con electro para windows, linux, mac",
+            "created_at":"2019-08-29T13:28:22.687749+00:00",
+            "update_at":"2019-09-01"
+
+        }
+    },
+    {
+        "model":"note.note",
+        "pk":4,
+        "fields":{
+            "category":2,
+            "user": 1,
+            "title":"Jugar Pelota",
+            "note":"Jugar pelota este fin de semana",
+            "created_at":"2019-08-29T13:28:22.687749+00:00",
+            "update_at":"2019-09-01"
+
+        }
+    },
+    {
+        "model":"note.note",
+        "pk":5,
+        "fields":{
+            "category":1,
+            "user": 2,
+            "title":"React-native",
+            "note":"Desarrollar app con react-native y apollo",
+            "created_at":"2019-08-29T13:28:22.687749+00:00",
+            "update_at":"2019-09-01"
+
+        }
+    },
+    {
+        "model":"note.note",
+        "pk":6,
+        "fields":{
+            "category":2,
+            "user": 2,
+            "title":"Conseguir novia",
+            "note":"Conseguir una novia que me entienda porque paso mucho tiempo frente a la laptop",
+            "created_at":"2019-08-29T13:28:22.687749+00:00",
+            "update_at":"2019-09-01"
+
+        }
+    },
+    {
+        "model":"note.note",
+        "pk":7,
+        "fields":{
+            "category":1,
+            "user": 2,
+            "title":"python",
+            "note":"Desarrollar app con python para windows, linux, mac",
+            "created_at":"2019-08-29T13:28:22.687749+00:00",
+            "update_at":"2019-09-01"
+
+        }
+    },
+    {
+        "model":"note.note",
+        "pk":8,
+        "fields":{
+            "category":2,
+            "user": 2,
+            "title":"Jugar basketball",
+            "note":"Jugar basketball este fin de semana",
+            "created_at":"2019-08-29T13:28:22.687749+00:00",
+            "update_at":"2019-09-01"
+
+        }
+    }
+]
