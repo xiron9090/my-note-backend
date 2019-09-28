@@ -1,1 +1,6 @@
 db.sqlite3
+.vscode
+note/migrations/__pycache__/*.pyc
+users/__pycache__/
+note/__pycache__/
+myNote/__pycache__/

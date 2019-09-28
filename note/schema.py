@@ -3,7 +3,7 @@ from graphql import GraphQLError
 from graphene_django import DjangoObjectType
 from django.db.models import Q
 from .models import Category, Note
-
+from django.contrib.auth.models import User
 
 
 class NoteType(DjangoObjectType):
@@ -20,7 +20,7 @@ class Query(graphene.ObjectType):
 
     notes = graphene.List(NoteType, search=graphene.String())
     note = graphene.Field(NoteType, id=graphene.Int(required=True))
-    categorys = graphene.List(CategoryType)
+    categories = graphene.List(CategoryType)
     category = graphene.Field(CategoryType, id=graphene.Int(required=True))
 
     def resolve_category(self, info, **kwargs):
@@ -35,11 +35,11 @@ class Query(graphene.ObjectType):
 
         if user.is_anonymous:
             raise GraphQLError('Login pleace')
-        return Note.objects.get(id=kwargs.get('id'))
+
+        return Note.objects.get(id=kwargs.get('id'), user=user)
 
     def resolve_notes(self, info, **kwargs):
         user = info.context.user
-       
 
         if user.is_anonymous:
             raise GraphQLError('Login pleace')
@@ -54,7 +54,7 @@ class Query(graphene.ObjectType):
             return Note.objects.filter(filter, user=user)
         return Note.objects.filter(user=user)
 
-    def resolve_categorys(self, info, **kwargs):
+    def resolve_categories(self, info, **kwargs):
         user = info.context.user
         if user.is_anonymous:
             raise GraphQLError('Login pleace')

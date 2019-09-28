@@ -1,9 +1,10 @@
 from django.db import models
-from django.contrib.auth import get_user_model
+from django.contrib.auth.models import User
 
 class Profile(models.Model):
-    avatar = models.ImageField(upload_to='avatar/', blank=True, null=True )
-    user = models.OneToOneField(get_user_model(), on_delete=models.CASCADE)
+    avatar = models.ImageField(upload_to='avatar/', blank=True, null=True,)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+
     
     class Meta:
         db_table = 'profile'
